@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Middle English Translator (Web)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Middle English Translator</h1>
+    <p class="subtitle">Modern ↔ Middle English</p>
+
+    <div class="controls">
+      <label><input type="radio" name="dir" value="m2me" checked /> Modern → Middle</label>
+      <label><input type="radio" name="dir" value="me2m" /> Middle → Modern</label>
+    </div>
+
+    <textarea id="input" rows="4" placeholder="Type a sentence...">You are my friend.</textarea>
+
+    <div class="actions">
+      <button id="translate">Translate</button>
+    </div>
+
+    <div class="examples" aria-label="Examples">
+      <button class="ex">You have a good heart.</button>
+      <button class="ex">Your apple is sweet.</button>
+      <button class="ex">He loves the lady.</button>
+      <button class="ex">Thou art my freend.</button>
+    </div>
+
+    <h2>Output</h2>
+    <pre id="output">(press Translate)</pre>
+  </main>
+
+  <footer>
+    <small>Rule-based engine. No API needed.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
